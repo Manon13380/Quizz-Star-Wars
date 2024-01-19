@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Star Wars</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="shortcut icon" href="./assets/Images/logoStarDeath.png" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./assets/Images/StarWars.png" width="100" alt="Logo Star Wars">
+        </div>
+        <div>
+            <p>Bienvenue dans le quizz 100'/. Star Wars</p>
+            <div class="difficult">
+                <p> Niveau de difficultée </p>
+                <div>
+                    <img src="./assets/Images/sabre.png" width="50" alt="Sabre Laser">
+                </div>
+                <div>
+                    <img src="./assets/Images/sabre.png" width="50" alt="Sabre Laser">
+                </div>
+                <div>
+                    <img src="./assets/Images/sabre.png" width="50" alt="Sabre Laser">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Boite à questions/réponses -->
+        <div class="container">
+            <!-- boite à questions -->
+            <div class="questionContainer">
+                <p id="numbQuestion"></p>
+                <p id="question"></p>
+            </div>
+            <!-- boite à réponses -->
+            <div class="responseContainer">
+                <div class="result">
+                    <p id="result"></p>
+                    <div class ="score">
+                        <p id="score">Score :</p>
+                        <p id="point"></p>
+                    </div>
+                </div>
+                <div class="caseResponse">
+                    <div class="btnResponse">
+                        <p onclick="validation(this)" class="response"></p>
+                    </div>
+                    <div class="btnResponse">
+                        <p onclick="validation(this)" class="response"></p>
+                    </div>
+                </div>
+                <div class="caseResponse">
+                    <div class="btnResponse">
+                        <p onclick="validation(this)" class="response"></p>
+                    </div>
+                    <div class="btnResponse">
+                        <p onclick="validation(this)" class="response"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button onclick="reset()" id="restart" type="button">Restart</button>
+        </div>
+    </main>
+    <script src="./assets/Js/main.js"></script>
+</body>
+
+</html>
