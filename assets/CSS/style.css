@@ -14,6 +14,7 @@ body {
     background-size: cover;
     color: lightgrey;
     margin: auto;
+    height: 100vh;
 }
 
 header {
@@ -123,7 +124,7 @@ main {
     100% { color: hsl(0, 0%, 100%); }
 }
 
-@media (max-width : 570px) {
+@media (max-width : 603px) {
     header {
         display: flex;
         flex-direction: column;
